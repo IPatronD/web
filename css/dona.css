@@ -1,0 +1,189 @@
+.menu {
+    background-image: url('../imagenes/huellitas.png');
+    background-size: 1500px 200px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    min-height: 150px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.menu-principal {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal > li {
+    position: relative;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.5s;
+}
+
+.menu-principal > li:hover > a {
+    background-color: #e99f32;
+}
+
+.submenu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    display: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu ul li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.submenu ul li a:hover {
+    background-color: #e99f32;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: sienna;
+}
+
+/* Estilo de sección donaciones */
+.contenedor-donacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 30px;
+}
+
+.inicio {
+    flex: 1 1 500px;
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inicio p {
+    text-align: justify;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-weight: bolder;
+}
+
+.inicio h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: red;
+}
+
+.donacionesMenu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.donacionesMenu li {
+    background-color: #ffe4c4;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: fit-content;
+    font-weight: bold;
+    color: #5c3d00;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.imagen-donacion {
+    flex: 1 1 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-donacion img {
+    max-width: 100%;
+    width: 510px;
+    height: 558px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_links {
+    margin-top: 20px;
+}
+
+.footer_links a {
+    color: #777;
+}
+
+/* Ajustes generales */
+img {
+    width: 200px;
+}
+
+.inicio ol,
+li {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
